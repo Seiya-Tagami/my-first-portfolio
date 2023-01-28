@@ -1,3 +1,71 @@
 @use "../../foundation/variables" as *;
 @use "../../foundation/mixin" as *;
 
+.p-about {
+  text-align: center;
+
+  & h2 {
+    margin-top: 80px;
+    font-weight: 700;
+    font-size: 5rem;
+    text-decoration: underline;
+    color: $color-white;
+    background-color: $color-black-blue;
+    clip-path: polygon(3% 0%, 100% 0, 97% 100%, 0% 100%);
+  }
+
+  &__content {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+
+    & img {
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+    }
+
+    &__passage {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      width: 40%;
+      padding-top: 40px;
+      text-align: left;
+
+      & p:first-child {
+        font-size: 4rem;
+        font-weight: 700;
+      }
+
+      & p:nth-child(2) {
+        font-size: 2rem;
+        font-weight: normal;
+        line-height: 1.5;
+      }
+
+      & button {
+        display: flex;
+        gap: 20px;
+        width: 280px;
+        padding: 16px;
+        font-size: 2.8rem;
+        font-weight: normal;
+        background-color: #81C7D4;
+        border-radius: 5px;
+
+        &:hover {
+          background-color: #a0d0d9;
+          transform: translateY(-5px);
+          transition: .3s;
+        }
+        
+        &:hover svg {
+          transform: translateX(5px);
+          transition: .3s;
+        }
+      }
+    }
+  }
+}

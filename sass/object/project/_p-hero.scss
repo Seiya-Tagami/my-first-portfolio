@@ -6,8 +6,8 @@
     position: relative;
     display: grid;
     place-items: center;
-    height: 740px;
-    background-image: url(../../images/splash.png);
+    height: 100vh;
+    background-image: url(../../images/sky.png);
     background-position: center;
     background-size: cover;
 
@@ -16,17 +16,10 @@
       font-size: 10rem;
       font-weight: 700;
       display: inline-block;
-      background: linear-gradient(45deg, #fa8bff 16%, #2bd2ff 57%, #2bff88 90%);
-      background: -webkit-linear-gradient(45deg, #fa8bff 16%, #2bd2ff 57%, #2bff88 90%);
+      background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(5, 5, 17, 1) 0%, rgba(161, 102, 255, 1) 97%, rgba(0, 212, 255, 1) 100%);
       background-size: 300% auto;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: gradientEffect 3.5s infinite alternate;
-    }
-
-    @keyframes gradientEffect {
-      from {background-position: left}
-      to {background-position: right}
     }
   }
 }
