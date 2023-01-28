@@ -1,0 +1,33 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+.p-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: $color-white;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 120px;
+
+    & h1 {
+      font-size: 4rem;
+      font-weight: 700;
+    }
+
+    &__navigation {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      & a {
+        font-size: 2rem;
+      }
+    }
+  }
+}
