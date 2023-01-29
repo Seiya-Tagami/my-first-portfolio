@@ -327,24 +327,29 @@ img {
 .p-header__container h1 span {
   color: #ecad65;
 }
-.p-header__container__navigation {
+.p-header__navigation {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.p-header__navigation__list {
   display: flex;
   align-items: center;
   gap: 40px;
 }
 @media (max-width: 960px) {
-  .p-header__container__navigation {
+  .p-header__navigation__list {
     display: none;
   }
 }
-.p-header__container__navigation a {
+.p-header__navigation a {
   position: relative;
   display: inline-block;
   font-size: 2rem;
   text-decoration: none;
   overflow: hidden;
 }
-.p-header__container__navigation a:after {
+.p-header__navigation a:after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -355,10 +360,10 @@ img {
   transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
   content: "";
 }
-.p-header__container__navigation a:hover:after {
+.p-header__navigation a:hover:after {
   transform: translate(0, 0);
 }
-.p-header__container__icon {
+.p-header__navigation__icon {
   font-size: 3rem;
   cursor: pointer;
 }
@@ -371,6 +376,7 @@ img {
   background-image: url(https://github.com/Seiya-Tagami/my-first-portfolio/blob/develop/images/sky.png?raw=true);
   background-position: center;
   background-size: cover;
+  transition: all 0.6s ease-in-out;
 }
 .p-hero__container h2 {
   position: absolute;
