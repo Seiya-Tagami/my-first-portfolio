@@ -21,6 +21,10 @@
   &__introduction {
     font-size: 2.5rem;
     margin-top: 56px;
+
+    @include mobile {
+      margin-top: 24px;
+    }
   }
 
   &__content {

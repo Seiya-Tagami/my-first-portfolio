@@ -15,3 +15,9 @@ body {
   //dark-mode
   transition: all .6s ease-in-out;
 }
+
+br {
+  @include mobile {
+    display: none;
+  }
+}
