@@ -10,6 +10,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  transition: all 0.6s ease-in-out;
 }
 
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
@@ -300,6 +301,7 @@ img {
   height: 80px;
   background-color: #ffffff;
   z-index: 10;
+  transition: all 0.6s ease-in-out;
 }
 @media (max-width: 960px) {
   .p-header {
@@ -355,6 +357,10 @@ img {
 }
 .p-header__container__navigation a:hover:after {
   transform: translate(0, 0);
+}
+.p-header__container__icon {
+  font-size: 3rem;
+  cursor: pointer;
 }
 
 .p-hero__container {
@@ -714,9 +720,10 @@ img {
   border-radius: 5px;
 }
 
-.u-display-block {
-  display: block;
+.u-dark-mode {
+  background-color: #000000 !important;
+  color: #ffffff;
 }
-.u-display-flex {
-  display: flex;
+.u-dark-mode-image {
+  background-image: url(../../images/nightsky.png);
 }/*# sourceMappingURL=common.css.map */

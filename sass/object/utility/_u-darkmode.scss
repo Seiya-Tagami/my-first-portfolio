@@ -1,0 +1,10 @@
+@use "../../foundation/variables" as *;
+
+.u-dark-mode {
+  background-color: $color-black !important;
+  color: $color-white;
+
+  &-image {
+    background-image: url(../../images/nightsky.png);
+  }
+}

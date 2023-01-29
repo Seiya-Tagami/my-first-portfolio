@@ -12,4 +12,6 @@ html {
 
 body {
   font-family: $font-default;
+  //dark-mode
+  transition: all .6s ease-in-out;
 }
