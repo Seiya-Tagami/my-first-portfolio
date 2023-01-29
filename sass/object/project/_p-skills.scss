@@ -57,6 +57,7 @@
       flex-direction: column;
       gap: 20px;
       width: 100%;
+      padding: 20px 32px;
     }
 
     &:hover {
@@ -82,7 +83,11 @@
       }
 
       & p {
-        font-size: 1.5rem;
+        font-size: 2rem;
+
+        @include mobile {
+          font-size: 1.7rem;
+        }
       }
     }
 
