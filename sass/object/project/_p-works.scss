@@ -9,13 +9,15 @@
     font-weight: 700;
     font-size: 5rem;
     text-decoration: underline;
-    background-color: $color-yellow;
+    // background-color: $color-yellow;
+    background-color: $color-black-blue;
     clip-path: polygon(3% 0%, 100% 0, 97% 100%, 0% 100%);
+    color: #fff;
   }
 
   &__introduction {
-    font-size: 2rem;
-    margin-top: 32px;
+    font-size: 2.5rem;
+    margin-top: 56px;
   }
 
   &__container {
@@ -25,7 +27,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 72px;
+    margin-top: 32px;
     padding: 30px;
   }
 
@@ -40,6 +42,7 @@
     background-color: $color-black-blue;
     border-radius: 10px;
     box-shadow: 0 5px 202px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 
     &:hover {
       transform:scale(1.02);
@@ -49,8 +52,8 @@
     &__imgBox {
       position: absolute;
       width: 260px;
-      height: 200px;
-      top: -60px;
+      height: auto;
+      top: -20px;
       left: 50%;
       transform: translateX(-50%);
       z-index: 1;
@@ -72,6 +75,7 @@
       & h3 {
         font-size: 3rem;
         font-weight: 700;
+        color: #7DB9DE;
       }
 
       & p {
