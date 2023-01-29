@@ -1,0 +1,21 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+.p-now {
+  text-align: center;
+
+  & h2 {
+    margin-top: 80px;
+    font-weight: 700;
+    font-size: 5rem;
+    text-decoration: underline;
+    color: $color-white;
+    background-color: $color-black-blue;
+    clip-path: polygon(3% 0%, 100% 0, 97% 100%, 0% 100%);
+  }
+
+  &__introduction {
+    font-size: 2.5rem;
+    margin-top: 56px;
+  }
+}
