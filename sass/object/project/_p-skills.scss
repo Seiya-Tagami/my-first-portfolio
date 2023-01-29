@@ -1,0 +1,93 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+.p-skills {
+  text-align: center;
+
+  & h2 {
+    margin-top: 80px;
+    padding: 8px;
+    font-weight: 700;
+    font-size: 5rem;
+    text-decoration: underline;
+    color: $color-white;
+    background-color: $color-black-blue;
+    clip-path: polygon(3% 0%, 100% 0, 97% 100%, 0% 100%);
+  }
+
+  &__introduction {
+    font-size: 2.5rem;
+    margin-top: 56px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 40px;
+    padding: 30px;
+
+    &__imgBox {
+      width: 400px;
+      height: auto;
+
+      & img {
+        max-width: 100%;
+        height: 100%;
+        border-radius: 16px;
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 60%;
+    padding: 20px 56px;
+    background-color: $color-black-blue;
+    text-align: left;
+
+    &:hover {
+      transform: scale(1.1);
+      transition-duration: .3s;
+    }
+
+    &__icon {
+      font-size: 15rem;
+    }
+    
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex-grow: 1;
+      color: $color-white;
+
+      & h3 {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+
+      & p {
+        font-size: 1.5rem;
+      }
+    }
+
+    &__badges {
+      display: flex;
+      justify-content: flex-start;
+      gap: 20px;
+      font-size: 1.6rem;
+      font-weight: 600;
+
+      & div {
+        padding: 8px;
+        background-color: #3e394a;
+        border-radius: 5px;
+      }
+    }
+  }
+}

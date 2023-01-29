@@ -13,6 +13,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- the header -->
@@ -23,7 +31,7 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#works">Works</a></li>
-          <li><a href="#now">Now</a></li>
+          <li><a href="#skills">skills</a></li>
         </ul>
       </div>
     </header>
@@ -103,9 +111,52 @@
             </div>
           </div>
         </section>
-        <section class="p-now" id="now">
-          <h2>What I am doing right now</h2>
-          <p class="p-now__introduction">これまでは、ドットインストールを中心とした学習でしたが、最近ではUdemyや<br />Youtubeを活用し、楽しくプログラミングを学んでいます。</p>
+        <section class="p-skills" id="skills">
+          <h2>Skills</h2>
+          <p class="p-skills__introduction">
+            これまでは、ドットインストールを中心とした学習でしたが、最近ではUdemyや<br />Youtubeを活用し、楽しくプログラミングを学び続けています！
+          </p>
+          <div class="p-skills__content">
+            <div class="p-skills__card">
+              <div class="p-skills__card__icon">
+                <i class="fa-brands fa-square-js" style="color: #f7e018"></i>
+              </div>
+              <div class="p-skills__card__inner">
+                <h3>JavaScript</h3>
+                <div class="p-skills__card__badges">
+                  <div>ウェブサイト開発</div>
+                  <div>フロントエンド開発</div>
+                </div>
+                <p>今はReactやTypeScriptにフォーカスし、勉強しています。</p>
+              </div>
+            </div>
+            <div class="p-skills__card">
+              <div class="p-skills__card__icon">
+                <i class="fa-brands fa-css3" style="color: #2862e9"></i>
+              </div>
+              <div class="p-skills__card__inner">
+                <h3>HTML/CSS</h3>
+                <div class="p-skills__card__badges">
+                  <div>ウェブサイト開発</div>
+                  <div>フロントエンド開発</div>
+                </div>
+                <p>最近はTailwindCSSといったCSSフレームワークも勉強しています。</p>
+              </div>
+            </div>
+            <div class="p-skills__card">
+              <div class="p-skills__card__icon" style="color: #858ebb;">
+                <i class="fa-brands fa-php"></i>
+              </div>
+              <div class="p-skills__card__inner">
+                <h3>PHP</h3>
+                <div class="p-skills__card__badges">
+                  <div>ウェブサイト開発</div>
+                  <div>バックエンド開発</div>
+                </div>
+                <p>Laravelにも取り組んでみようかと考えています。</p>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>

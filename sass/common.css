@@ -319,8 +319,8 @@ img {
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: #000000;
-  transform: translate(-100%, 0);
+  background-color: #666666;
+  transform: translate(-105%, 0);
   transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
   content: "";
 }
@@ -375,6 +375,7 @@ img {
 }
 .p-about h2 {
   margin-top: 80px;
+  padding: 8px;
   font-weight: 700;
   font-size: 5rem;
   text-decoration: underline;
@@ -436,6 +437,7 @@ img {
 }
 .p-works h2 {
   margin-top: 80px;
+  padding: 8px;
   font-weight: 700;
   font-size: 5rem;
   text-decoration: underline;
@@ -507,11 +509,12 @@ img {
   line-height: 1.5;
 }
 
-.p-now {
+.p-skills {
   text-align: center;
 }
-.p-now h2 {
+.p-skills h2 {
   margin-top: 80px;
+  padding: 8px;
   font-weight: 700;
   font-size: 5rem;
   text-decoration: underline;
@@ -520,7 +523,67 @@ img {
   -webkit-clip-path: polygon(3% 0%, 100% 0, 97% 100%, 0% 100%);
           clip-path: polygon(3% 0%, 100% 0, 97% 100%, 0% 100%);
 }
-.p-now__introduction {
+.p-skills__introduction {
   font-size: 2.5rem;
   margin-top: 56px;
+}
+.p-skills__content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 40px;
+  padding: 30px;
+}
+.p-skills__content__imgBox {
+  width: 400px;
+  height: auto;
+}
+.p-skills__content__imgBox img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+.p-skills__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 60%;
+  padding: 20px 56px;
+  background-color: #08192D;
+  text-align: left;
+}
+.p-skills__card:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+.p-skills__card__icon {
+  font-size: 15rem;
+}
+.p-skills__card__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-grow: 1;
+  color: #ffffff;
+}
+.p-skills__card__inner h3 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.p-skills__card__inner p {
+  font-size: 1.5rem;
+}
+.p-skills__card__badges {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.p-skills__card__badges div {
+  padding: 8px;
+  background-color: #3e394a;
+  border-radius: 5px;
 }/*# sourceMappingURL=common.css.map */

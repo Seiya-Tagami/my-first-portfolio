@@ -6,6 +6,7 @@
 
   & h2 {
     margin-top: 80px;
+    padding: 8px;
     font-weight: 700;
     font-size: 5rem;
     text-decoration: underline;
@@ -58,12 +59,12 @@
         &:hover {
           background-color: #f3d675;
           transform: translateY(-5px);
-          transition: .3s;
+          transition: 0.3s;
         }
-        
+
         &:hover svg {
           transform: translateX(5px);
-          transition: .3s;
+          transition: 0.3s;
         }
       }
     }
