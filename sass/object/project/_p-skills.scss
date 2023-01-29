@@ -53,6 +53,12 @@
     background-color: $color-black-blue;
     text-align: left;
 
+    @include mobile {
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+
     &:hover {
       transform: scale(1.1);
       transition-duration: .3s;
@@ -64,6 +70,7 @@
     
     &__inner {
       display: flex;
+      align-items: center;
       flex-direction: column;
       gap: 12px;
       flex-grow: 1;
@@ -85,6 +92,10 @@
       gap: 20px;
       font-size: 1.6rem;
       font-weight: 600;
+
+      @include mobile {
+        justify-content: center;
+      }
 
       & div {
         padding: 8px;

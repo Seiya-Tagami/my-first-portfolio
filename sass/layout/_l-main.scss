@@ -5,9 +5,13 @@
     width: 85%;
     margin: 0 auto;
     padding: 0 40px 64px;
+
+    @include mobile {
+      padding: 0px 12px 64px;
+    }
   }
 
   @include mobile {
-    margin-top: 56px;
+    margin-top: 60px;
   }
 }

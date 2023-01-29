@@ -1,8 +1,13 @@
 @use "../foundation/variables" as *;
+@use "./mixin" as *;
 
 html {
   font-size: 8px;
   scroll-behavior: smooth;
+
+  @include mobile {
+    font-size: 7px;
+  }
 }
 
 body {

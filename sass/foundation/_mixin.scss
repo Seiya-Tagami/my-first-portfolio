@@ -1,6 +1,6 @@
 //responsive
 
-$mobile-breakpoint: 767px;
+$mobile-breakpoint: 960px;
 
 @mixin mobile {
   @media (max-width: $mobile-breakpoint) {

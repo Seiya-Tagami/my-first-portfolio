@@ -21,6 +21,10 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: slideIn 1.8s;
+
+      @include mobile {
+        font-size: 6rem;
+      }
     }
 
     @keyframes slideIn {
