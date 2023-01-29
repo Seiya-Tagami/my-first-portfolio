@@ -24,6 +24,8 @@
 
       @include mobile {
         font-size: 6rem;
+        animation: fadeIn 2s;
+        padding: 20px;
       }
     }
 
@@ -35,6 +37,15 @@
       to {
         opacity: 1;
         transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
       }
     }
   }

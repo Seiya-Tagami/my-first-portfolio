@@ -381,6 +381,9 @@ img {
 @media (max-width: 960px) {
   .p-hero__container h2 {
     font-size: 6rem;
+    -webkit-animation: fadeIn 2s;
+            animation: fadeIn 2s;
+    padding: 20px;
   }
 }
 @-webkit-keyframes slideIn {
@@ -401,6 +404,22 @@ img {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -586,7 +605,7 @@ img {
 }
 .p-works__card__content p {
   margin-top: 20px;
-  font-size: 2rem;
+  font-size: 1.7rem;
   line-height: 1.5;
 }
 @media (max-width: 960px) {

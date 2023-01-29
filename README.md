@@ -1,1 +1,1 @@
-# my-first-portfolio with HTML,SASS and Vanila JS
+# my-first-portfolio with HTML,SASS and Vanilla JS
