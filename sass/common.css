@@ -712,4 +712,11 @@ img {
   padding: 8px;
   background-color: #3e394a;
   border-radius: 5px;
+}
+
+.u-display-block {
+  display: block;
+}
+.u-display-flex {
+  display: flex;
 }/*# sourceMappingURL=common.css.map */
