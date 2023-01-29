@@ -9,10 +9,13 @@
     padding: 8px;
     font-weight: 700;
     font-size: 5rem;
-    text-decoration: underline;
     color: $color-white;
     background-color: $color-black-blue;
     clip-path: polygon(3% 0%, 100% 0, 97% 100%, 0% 100%);
+
+    & span {
+      color: #ecad65;
+    }
   }
 
   &__introduction {

@@ -301,6 +301,9 @@ img {
   font-size: 4rem;
   font-weight: 700;
 }
+.p-header__container h1 span {
+  color: #ecad65;
+}
 .p-header__container__navigation {
   display: flex;
   align-items: center;
@@ -333,7 +336,7 @@ img {
   display: grid;
   place-items: center;
   height: 100vh;
-  background-image: url(../../images/sky.png);
+  background-image: url(https://github.com/Seiya-Tagami/my-first-portfolio/blob/develop/images/sky.png?raw=true);
   background-position: center;
   background-size: cover;
 }
@@ -378,11 +381,13 @@ img {
   padding: 8px;
   font-weight: 700;
   font-size: 5rem;
-  text-decoration: underline;
   color: #ffffff;
   background-color: #08192D;
   -webkit-clip-path: polygon(3% 0%, 100% 0, 97% 100%, 0% 100%);
           clip-path: polygon(3% 0%, 100% 0, 97% 100%, 0% 100%);
+}
+.p-about h2 span {
+  color: #ecad65;
 }
 .p-about__content {
   width: 100%;
@@ -440,11 +445,13 @@ img {
   padding: 8px;
   font-weight: 700;
   font-size: 5rem;
-  text-decoration: underline;
   background-color: #08192D;
   -webkit-clip-path: polygon(3% 0%, 100% 0, 97% 100%, 0% 100%);
           clip-path: polygon(3% 0%, 100% 0, 97% 100%, 0% 100%);
   color: #fff;
+}
+.p-works h2 span {
+  color: #ecad65;
 }
 .p-works__introduction {
   font-size: 2.5rem;
@@ -501,7 +508,7 @@ img {
 .p-works__card__content h3 {
   font-size: 3rem;
   font-weight: 700;
-  color: #7DB9DE;
+  color: #7db9de;
 }
 .p-works__card__content p {
   margin-top: 20px;
@@ -517,11 +524,13 @@ img {
   padding: 8px;
   font-weight: 700;
   font-size: 5rem;
-  text-decoration: underline;
   color: #ffffff;
   background-color: #08192D;
   -webkit-clip-path: polygon(3% 0%, 100% 0, 97% 100%, 0% 100%);
           clip-path: polygon(3% 0%, 100% 0, 97% 100%, 0% 100%);
+}
+.p-skills h2 span {
+  color: #ecad65;
 }
 .p-skills__introduction {
   font-size: 2.5rem;

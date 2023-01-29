@@ -9,10 +9,13 @@
     padding: 8px;
     font-weight: 700;
     font-size: 5rem;
-    text-decoration: underline;
     background-color: $color-black-blue;
     clip-path: polygon(3% 0%, 100% 0, 97% 100%, 0% 100%);
     color: #fff;
+
+    & span {
+      color: #ecad65;
+    }
   }
 
   &__introduction {
@@ -45,7 +48,7 @@
     cursor: pointer;
 
     &:hover {
-      transform:scale(1.05);
+      transform: scale(1.05);
       transition: 0.5s;
     }
 
@@ -75,7 +78,7 @@
       & h3 {
         font-size: 3rem;
         font-weight: 700;
-        color: #7DB9DE;
+        color: #7db9de;
       }
 
       & p {

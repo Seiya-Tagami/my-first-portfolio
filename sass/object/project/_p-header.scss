@@ -19,6 +19,10 @@
     & h1 {
       font-size: 4rem;
       font-weight: 700;
+
+      & span {
+        color: #ecad65;
+      }
     }
 
     &__navigation {
