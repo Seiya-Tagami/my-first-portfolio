@@ -14,9 +14,10 @@
 
     & h2 {
       position: absolute;
+      display: inline-block;
+      line-height: 1.4;
       font-size: 10rem;
       font-weight: 700;
-      display: inline-block;
       background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(5, 5, 17, 1) 0%, rgba(161, 102, 255, 1) 97%, rgba(0, 212, 255, 1) 100%);
       background-size: 300% auto;
       -webkit-background-clip: text;

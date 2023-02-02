@@ -386,9 +386,10 @@ img {
 }
 .p-hero__container h2 {
   position: absolute;
+  display: inline-block;
+  line-height: 1.4;
   font-size: 10rem;
   font-weight: 700;
-  display: inline-block;
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(5, 5, 17) 0%, rgb(161, 102, 255) 97%, rgb(0, 212, 255) 100%);
   background-size: 300% auto;
   -webkit-background-clip: text;
@@ -558,7 +559,7 @@ img {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 32px;
+  margin-top: 40px;
   padding: 30px;
 }
 @media (max-width: 960px) {
@@ -583,7 +584,6 @@ img {
   .p-works__card {
     width: 100%;
     height: auto;
-    margin: 15px;
   }
 }
 .p-works__card:hover {
@@ -669,6 +669,11 @@ img {
   gap: 32px;
   margin-top: 40px;
   padding: 30px;
+}
+@media (max-width: 960px) {
+  .p-skills__content {
+    padding: 0;
+  }
 }
 .p-skills__content__imgBox {
   width: 400px;
