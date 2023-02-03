@@ -319,11 +319,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 120px;
+  height: 100%;
+  padding: 0px 120px;
 }
 @media (max-width: 960px) {
   .p-header__container {
-    padding: 15px 32px;
+    padding: 0px 32px;
   }
 }
 .p-header__container h1 {
