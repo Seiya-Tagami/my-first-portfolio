@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SeiyaCode</title>
+
+    <!-- load styles -->
+    <link rel="stylesheet" href="./sass/common.css" />
+
+    <!-- import google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- import font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="./scripts/darkmode.js" defer></script>
+  </head>
+  <body>
+    <!-- the header -->
+    <header class="p-header">
+      <div class="p-header__container">
+        <h1>Seiya<span>C</span>ode</h1>
+        <div class="p-header__navigation">
+          <ul class="p-header__navigation__list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#skills">skills</a></li>
+          </ul>
+          <div class="p-header__navigation__icon js-icon">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end of the header -->
+
+    <!-- the main -->
+    <main class="l-main">
+      <section class="p-hero" id="home">
+        <div class="p-hero__container js-hero-bgimg">
+          <h2>
+            Reflect philosophy<br />
+            in Programming
+          </h2>
+        </div>
+      </section>
+      <div class="l-main__contents">
+        <section class="p-about" id="about">
+          <h2>About <span>me</span></h2>
+          <div class="p-about__content">
+            <img src="./images/about.png" alt="" />
+            <div class="p-about__content__passage">
+              <p>Hello there!!<br />I'm Seiya<br />Web Developer</p>
+              <p>
+                I’m a university student in Tokyo. <br />
+                I’ve been studying programming since June 2022, and found that programming is very interesting thing as if it were Modern Magic✨ <br />
+                Also, I major in law at my university. I want to connect these two fields and discover solutions to various problems in the society.
+              </p>
+              <button>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.0858 7.75739L15.3284 12L11.0858 16.2427L9.67157 14.8285L12.5 12L9.67157 9.1716L11.0858 7.75739Z" fill="currentColor" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Contact me
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="p-works" id="works">
+          <h2>My <span>Wo</span>rks</h2>
+          <p class="p-works__introduction">
+            2022年6月からプログラミング学習を始めた僕ですが、ここまででどのような物を作ってきたか<br />ご紹介します。主に、所属していたプログラミング学習サークルでの作品です。
+          </p>
+          <div class="p-works__container">
+            <div class="p-works__card">
+              <div class="p-works__card__imgBox">
+                <img src="./images/quizsite.png" alt="" />
+              </div>
+              <div class="p-works__card__content">
+                <h3>三択クイズサイト</h3>
+                <p>クイズの正誤判定にはJavaScriptを、クイズの作成、追加・削除や管理者画面へのログイン機能にはPHPとMySQLを用いて作成しました。</p>
+              </div>
+            </div>
+            <div class="p-works__card">
+              <div class="p-works__card__imgBox">
+                <img src="./images/memorygame.png" alt="" />
+              </div>
+              <div class="p-works__card__content">
+                <h3>神経衰弱ゲーム</h3>
+                <p>
+                  これは学習を始めて、約2カ月の頃につくった神経衰弱ゲームです。「ひとりで遊ぶ」と「ふたりで遊ぶ」モードを作ったり、CSSで和風なデザインにしたり工夫することで楽しめるゲームにしました。
+                </p>
+              </div>
+            </div>
+            <div class="p-works__card">
+              <div class="p-works__card__imgBox">
+                <img src="./images/studyapp.png" alt="" />
+              </div>
+              <div class="p-works__card__content">
+                <h3>学習管理アプリ</h3>
+                <p>日々のプログラミング学習の記録を残し、グラフで可視化することができるWebアプリケーションを作成しました。ユーザー体験を考えながら、使いやすさを重視しました。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="p-skills" id="skills">
+          <h2>S<span>k</span>ills</h2>
+          <p class="p-skills__introduction">
+            これまでは、ドットインストールを中心とした学習でしたが、最近ではUdemyや<br />Youtubeを活用し、楽しくプログラミングを学び続けています！
+          </p>
+          <div class="p-skills__content">
+            <div class="p-skills__card">
+              <div class="p-skills__card__icon">
+                <i class="fa-brands fa-square-js" style="color: #f7e018"></i>
+              </div>
+              <div class="p-skills__card__inner">
+                <h3>JavaScript</h3>
+                <div class="p-skills__card__badges">
+                  <div>ウェブサイト開発</div>
+                  <div>フロントエンド開発</div>
+                </div>
+                <p>今はReactやTypeScriptにフォーカスし、勉強しています。</p>
+              </div>
+            </div>
+            <div class="p-skills__card">
+              <div class="p-skills__card__icon">
+                <i class="fa-brands fa-css3" style="color: #2862e9"></i>
+              </div>
+              <div class="p-skills__card__inner">
+                <h3>HTML/CSS</h3>
+                <div class="p-skills__card__badges">
+                  <div>ウェブサイト開発</div>
+                  <div>フロントエンド開発</div>
+                </div>
+                <p>最近はTailwindCSSといったCSSフレームワークも勉強しています。</p>
+              </div>
+            </div>
+            <div class="p-skills__card">
+              <div class="p-skills__card__icon" style="color: #858ebb">
+                <i class="fa-brands fa-php"></i>
+              </div>
+              <div class="p-skills__card__inner">
+                <h3>PHP</h3>
+                <div class="p-skills__card__badges">
+                  <div>ウェブサイト開発</div>
+                  <div>バックエンド開発</div>
+                </div>
+                <p>今後、Laravel等のフレームワークにも取り組んでみようとも考えています。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- end of the main -->
+  </body>
+</html>

@@ -1,0 +1,23 @@
+@use "../foundation/variables" as *;
+@use "./mixin" as *;
+
+html {
+  font-size: 8px;
+  scroll-behavior: smooth;
+
+  @include mobile {
+    font-size: 7px;
+  }
+}
+
+body {
+  font-family: $font-default;
+  //dark-mode
+  transition: all .6s ease-in-out;
+}
+
+br {
+  @include mobile {
+    display: none;
+  }
+}

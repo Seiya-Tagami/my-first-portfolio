@@ -1,0 +1,9 @@
+//responsive
+
+$mobile-breakpoint: 960px;
+
+@mixin mobile {
+  @media (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}

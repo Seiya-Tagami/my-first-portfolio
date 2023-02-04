@@ -1,0 +1,17 @@
+@use "../foundation/mixin" as *;
+
+.l-main {
+  &__contents {
+    width: 85%;
+    margin: 0 auto;
+    padding: 0 40px 64px;
+
+    @include mobile {
+      padding: 0px 12px 64px;
+    }
+  }
+
+  @include mobile {
+    margin-top: 60px;
+  }
+}

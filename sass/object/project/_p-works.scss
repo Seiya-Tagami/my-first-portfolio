@@ -1,0 +1,116 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+.p-works {
+  text-align: center;
+
+  & h2 {
+    margin-top: 80px;
+    padding: 8px;
+    font-weight: 700;
+    font-size: 5rem;
+    background-color: $color-black-blue;
+    clip-path: polygon(3% 0%, 100% 0, 97% 100%, 0% 100%);
+    color: #fff;
+
+    & span {
+      color: #ecad65;
+    }
+  }
+
+  &__introduction {
+    font-size: 2.5rem;
+    margin-top: 56px;
+
+    @include mobile {
+      margin-top: 24px;
+    }
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 40px;
+    padding: 30px;
+
+    @include mobile {
+      padding: 0;
+    }
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    height: 360px;
+    margin: 30px 20px;
+    padding: 20px 15px;
+    background-color: $color-black-blue;
+    border-radius: 10px;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    @include mobile {
+      width: 100%;
+      height: auto;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      transition: 0.5s;
+    }
+
+    &__imgBox {
+      position: absolute;
+      width: 260px;
+      height: auto;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      box-shadow: 0 5px 202px rgba(0, 0, 0, 0.2);
+
+      @include mobile {
+        width: 220px;
+      }
+
+      & img {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+      }
+    }
+
+    &__content {
+      margin-top: 140px;
+      padding: 10px 15px;
+      text-align: center;
+      color: $color-white;
+
+      @include mobile {
+        margin-top: 100px;
+      }
+
+      & h3 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #7db9de;
+      }
+
+      & p {
+        margin-top: 20px;
+        font-size: 1.7rem;
+        line-height: 1.5;
+
+        @include mobile {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+}
