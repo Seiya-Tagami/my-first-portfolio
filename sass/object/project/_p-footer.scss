@@ -1,3 +1,21 @@
 @use "../../foundation/variables" as *;
 @use "../../foundation/mixin" as *;
 
+.p-footer {
+  height: 80px;
+  border-top: 1px solid $color-black-blue;
+  text-align: center;
+
+  @include mobile {
+    height: 60px;
+  }
+
+  & small {
+    line-height: 80px;
+    font-size: 1.5rem;
+
+    @include mobile {
+      line-height: 60px;
+    }
+  }
+}

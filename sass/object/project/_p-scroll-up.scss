@@ -1,0 +1,36 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+.p-scroll-up {
+  display: none;
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: 60px;
+  height: 60px;
+  background-color: $color-yellow;
+  text-align: center;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translateY(-6px);
+  }
+
+  &.u-block {
+    opacity: 0.2;
+    animation: ani 0.5s ease-in-out forwards;
+  }
+
+  @keyframes ani {
+    100% {
+      opacity: 1;
+    }
+  }
+
+  & i {
+    line-height: 60px;
+    font-size: 4rem;
+  }
+}

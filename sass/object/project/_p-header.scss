@@ -2,13 +2,8 @@
 @use "../../foundation/mixin" as *;
 
 .p-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   height: 80px;
   background-color: $color-white;
-  z-index: 10;
 
   // dark-mode
   transition: all 0.6s ease-in-out;
