@@ -293,20 +293,10 @@ img {
     padding: 0px 12px 64px;
   }
 }
-@media (max-width: 960px) {
-  .l-main {
-    margin-top: 60px;
-  }
-}
 
 .p-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   height: 80px;
   background-color: #ffffff;
-  z-index: 10;
   transition: all 0.6s ease-in-out;
 }
 @media (max-width: 960px) {
@@ -375,6 +365,13 @@ img {
   cursor: pointer;
 }
 
+.p-hero__img img {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .p-hero__container {
   position: relative;
   display: grid;
@@ -395,25 +392,13 @@ img {
   background-size: 300% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: slideIn 1.8s;
-          animation: slideIn 1.8s;
+  animation: slideIn 1.8s;
 }
 @media (max-width: 960px) {
   .p-hero__container h2 {
     font-size: 6rem;
-    -webkit-animation: fadeIn 2s;
-            animation: fadeIn 2s;
+    animation: fadeIn 2s;
     padding: 20px;
-  }
-}
-@-webkit-keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
   }
 }
 @keyframes slideIn {
@@ -424,14 +409,6 @@ img {
   to {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 @keyframes fadeIn {
@@ -748,10 +725,68 @@ img {
   border-radius: 5px;
 }
 
+.p-footer {
+  height: 80px;
+  border-top: 1px solid #08192D;
+  text-align: center;
+}
+@media (max-width: 960px) {
+  .p-footer {
+    height: 60px;
+  }
+}
+.p-footer small {
+  line-height: 80px;
+  font-size: 1.5rem;
+}
+@media (max-width: 960px) {
+  .p-footer small {
+    line-height: 60px;
+  }
+}
+
+.p-scroll-up {
+  display: none;
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: 60px;
+  height: 60px;
+  background-color: #F9BF45;
+  text-align: center;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.p-scroll-up:hover {
+  transform: translateY(-6px);
+}
+.p-scroll-up.u-block {
+  opacity: 0.2;
+  animation: ani 0.5s ease-in-out forwards;
+}
+@keyframes ani {
+  100% {
+    opacity: 1;
+  }
+}
+.p-scroll-up i {
+  line-height: 60px;
+  font-size: 4rem;
+}
+
 .u-dark-mode {
   background-color: #000000 !important;
   color: #ffffff;
 }
 .u-dark-mode-image {
   background-image: url(https://github.com/Seiya-Tagami/my-first-portfolio/blob/develop/images/nightsky.png?raw=true);
+}
+
+.u-block {
+  display: block;
+}
+
+.u-none {
+  display: none;
 }/*# sourceMappingURL=common.css.map */
